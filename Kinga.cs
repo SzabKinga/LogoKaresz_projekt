@@ -38,20 +38,31 @@ namespace LogoKaresz
         }
         void Harfa(double meret, Color szin)
         {
+            Tollszín(szin);
             Jobbra(90);
-            Bezier(meret*0.5, 90, meret*0.5, 80, meret*1.5, false, false);
+            Bezier(meret * 0.35, 90, meret * 0.65, 80, meret * 1.5, false, false);
             Balra(90);
-            Előre(meret / 7);
-            Bezier(meret * 0.5, 90, meret * 0.5, 280, meret * 1.5, false, false);
+            Bezier(meret * 0.65, 90, meret * 0.35, 280, meret * 1.5, false, false);
             Jobbra(90);
             using (new Rajzol(false))
-                Előre(meret*0.7);
+                Előre(meret*0.535);
             Jobbra(90);
             Jobbra(90);
-            Bezier(meret * 0.5, 90, meret * 0.5, 80, meret * 1.5, false, false);
+            Bezier(meret * 0.3, 90, meret * 0.8, 80, meret * 1.58, false, false);
             Balra(90);
-            Előre(meret / 7);
-            Bezier(meret * 0.5, 90, meret * 0.5, 280, meret * 1.5, false, false);
+            Bezier(meret * 0.8, 90, meret * 0.3, 280, meret * 1.58, false, false);
+            Fordulj(-50);
+            using (new Rajzol(false))
+            {
+                Előre(meret / 10);
+            }
+            Tölt(szin);
+            using (new Rajzol(false))
+                Hátra(meret / 10);
+            Fordulj(50);
+            Tollszín(Color.Black);
+            /** /  
+            /**/
         }
     }
 }
