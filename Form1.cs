@@ -15,7 +15,7 @@ namespace LogoKaresz
 		{
 			/* Ezt indítja a START gomb! */
 			// Teleport(közép.X, közép.Y+150, észak);
-			MessageBox.Show("Hello!");
+			Alap(100, Color.Black);
 		}
 	}
 }
