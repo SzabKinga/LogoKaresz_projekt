@@ -7,12 +7,13 @@ namespace LogoKaresz
 {
 	public partial class Form1 : Form
 	{
-		void Külső_vonal_bal(double meret)
+		void Külső_vonal_bal(double meret, Color szin)
         {
+			Tollszín(szin);
 
 
 			Balra(90);
-            Bezier(50, 0, 50, 80, 100, false, false);
+            Bezier(meret/2, 0, meret/2, 80, meret, false, false);
 			Jobbra(50);
 			for (int i = 0; i < 10; i++)
 			{
@@ -23,36 +24,47 @@ namespace LogoKaresz
 
 			Tollat(fel);
 			Jobbra(5);
-			Hátra(25);
+			Hátra(meret/5);
 			Jobbra(90);
-			Hátra(105);
+			Hátra(meret/ 0.975);
 
 			Tollat(le);
 			
 
 
-
-
-
-
-
-
-
-
 		}
 
-		void Külső_vonal_jobb(double meret)
+		void Külső_vonal_jobb(double meret, Color szin)
 		{
+			Tollszín(szin);
 
+			Jobbra(-90);
+			Bezier(-meret/2, 30,meret/5,100, meret, false, false);
+		    Jobbra(100);
 
-			Bezier(-100, 175, -50, 120, 150, false, false);
+			for (int i = 0; i < 10; i++)
+			{
+				Előre(1);
+				Jobbra(1 + i);
+
+			}
+			Tollat(fel);
+			Balra(5);
+			Hátra(meret/5);
+			Balra(90);
+			Hátra(meret/ 0.975);
+
+			Tollat(le);
 
 
 
 		}
+
+
 		void FELADAT()
 		{
-			Külső_vonal_bal(100);
+			Külső_vonal_bal(160, Color.Green);
+			Külső_vonal_jobb(160, Color.Green);
 
 
 
