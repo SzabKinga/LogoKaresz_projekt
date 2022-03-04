@@ -24,7 +24,7 @@ namespace LogoKaresz
 
 			Tollat(fel);
 			Jobbra(5);
-			Hátra(meret/4.2);
+			Hátra(meret/3.9);
 			Jobbra(90);
 			Hátra(meret/ 0.975);
 
@@ -80,7 +80,7 @@ namespace LogoKaresz
 			}
 			Tollat(fel);
 			Balra(5);
-			Hátra(meret/4.2);
+			Hátra(meret/4);
 			Balra(90);
 			Hátra(meret/ 0.975);
 
@@ -136,16 +136,16 @@ namespace LogoKaresz
 		void FELADAT()
 		{
 			/**/
-			Külső_vonal_bal(135, Color.Green);
-			Külső_vonal_jobb(135, Color.Green);
+			Külső_vonal_bal(100, Color.Green);
+			Külső_vonal_jobb(100, Color.Green);
 
 			Tollat(fel);
-			Előre(15);
+			Előre(10);
 			Tollat(le);
 			
 
-			Külső_vonal_bal_belül(118, Color.Green);
-			Külső_vonal_jobb_belül(118, Color.Green);
+			Külső_vonal_bal_belül(85, Color.Green);
+			Külső_vonal_jobb_belül(85, Color.Green);
 			/**/
 			Tollat(fel);
 			Jobbra(5);
@@ -158,6 +158,7 @@ namespace LogoKaresz
 			Tollat(fel);
 			Előre(5);
 			Tollat(le);
+			/**/
 
 			
 
