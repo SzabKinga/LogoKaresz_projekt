@@ -24,7 +24,7 @@ namespace LogoKaresz
 
 			Tollat(fel);
 			Jobbra(5);
-			Hátra(meret/5);
+			Hátra(meret/4.2);
 			Jobbra(90);
 			Hátra(meret/ 0.975);
 
@@ -42,7 +42,7 @@ namespace LogoKaresz
 			Balra(90);
 			Bezier(meret / 2, 0, meret / 2, 80, meret, false, false);
 			Jobbra(50);
-			for (int i = 0; i < 5; i++)
+			for (int i = 0; i < 3; i++)
 			{
 				Előre(2);
 				Balra(1 + i);
@@ -50,12 +50,15 @@ namespace LogoKaresz
 			}
 
 			Tollat(fel);
-			Balra(35);
+			Balra(45);
 			Hátra(meret / 5);
 			Jobbra(90);
 			Hátra(meret / 0.965);
 
+
+
 			Tollat(le);
+			
 
 
 
@@ -77,7 +80,7 @@ namespace LogoKaresz
 			}
 			Tollat(fel);
 			Balra(5);
-			Hátra(meret/5);
+			Hátra(meret/4.2);
 			Balra(90);
 			Hátra(meret/ 0.975);
 
@@ -95,14 +98,14 @@ namespace LogoKaresz
 			Bezier(-meret / 2, 30, meret / 5, 100, meret, false, false);
 			Jobbra(100);
 
-			for (int i = 0; i < 5; i++)
+			for (int i = 0; i < 3; i++)
 			{
 				Előre(2);
 				Jobbra(1 + i);
 
 			}
 			Tollat(fel);
-			Jobbra(35);
+			Jobbra(40);
 			Hátra(meret / 5);
 			Balra(90);
 			Hátra(meret / 0.965);
@@ -113,20 +116,50 @@ namespace LogoKaresz
 
 		}
 
-
-		void FELADAT()
-		{
-			/**/
-			Külső_vonal_bal(150, Color.Green);
-			Külső_vonal_jobb(150, Color.Green);
+		void Üres(int meret, Color szin)
+        {
+			Külső_vonal_bal(meret, szin);
+			Külső_vonal_jobb(meret, szin);
 
 			Tollat(fel);
 			Előre(25);
 			Tollat(le);
-			/**/
+			
 
-			Külső_vonal_bal_belül(120, Color.Green);
-			Külső_vonal_jobb_belül(120, Color.Green);
+			Külső_vonal_bal_belül(meret*0.8, szin);
+			Külső_vonal_jobb_belül(meret*0.8, szin);
+
+
+		}
+
+
+		void FELADAT()
+		{
+			/**/
+			Külső_vonal_bal(135, Color.Green);
+			Külső_vonal_jobb(135, Color.Green);
+
+			Tollat(fel);
+			Előre(15);
+			Tollat(le);
+			
+
+			Külső_vonal_bal_belül(118, Color.Green);
+			Külső_vonal_jobb_belül(118, Color.Green);
+			/**/
+			Tollat(fel);
+			Jobbra(5);
+			Balra(90);
+			Előre(10);
+			Jobbra(90);
+			Hátra(5);
+			Tollat(le);
+			Tölt(Color.Green);
+			Tollat(fel);
+			Előre(5);
+			Tollat(le);
+
+			
 
 
 
