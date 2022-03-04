@@ -36,5 +36,9 @@ namespace LogoKaresz
             }
             Tölt(szin);
         }
+        void Harfa(double meret, Color szin)
+        {
+            Bezier(50, 270, 50, 180, 150, false, false);
+        }
     }
 }

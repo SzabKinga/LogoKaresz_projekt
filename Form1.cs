@@ -15,7 +15,8 @@ namespace LogoKaresz
 		{
 			/* Ezt indítja a START gomb! */
 			// Teleport(közép.X, közép.Y+150, észak);
-			Alap(100, Color.Black);
+			//Alap(100, Color.Black);
+			Harfa(0, Color.Black);
 		}
 	}
 }
