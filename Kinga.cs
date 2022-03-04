@@ -38,7 +38,20 @@ namespace LogoKaresz
         }
         void Harfa(double meret, Color szin)
         {
-            Bezier(50, 270, 50, 180, 150, false, false);
+            Jobbra(90);
+            Bezier(meret*0.5, 90, meret*0.5, 80, meret*1.5, false, false);
+            Balra(90);
+            Előre(meret / 7);
+            Bezier(meret * 0.5, 90, meret * 0.5, 280, meret * 1.5, false, false);
+            Jobbra(90);
+            using (new Rajzol(false))
+                Előre(meret*0.7);
+            Jobbra(90);
+            Jobbra(90);
+            Bezier(meret * 0.5, 90, meret * 0.5, 80, meret * 1.5, false, false);
+            Balra(90);
+            Előre(meret / 7);
+            Bezier(meret * 0.5, 90, meret * 0.5, 280, meret * 1.5, false, false);
         }
     }
 }
