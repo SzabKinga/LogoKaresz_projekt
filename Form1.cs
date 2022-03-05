@@ -137,7 +137,7 @@ namespace LogoKaresz
 			Jobbra(90);
 			Hátra(5);
 			Tollat(le);
-			Tölt(Color.Green);
+			Tölt(szin);
 			Tollat(fel);
 			Előre(5);
 			Tollat(le);
@@ -238,28 +238,95 @@ namespace LogoKaresz
 			Tollszín(szin);
 
 
+			////
+			///
+
+			Jobbra(-90);
+			Tollat(fel);
+			Előre(17);
+			Balra(-90);
+			Előre(6);
+			Jobbra(-90);
+			Tollat(le);
+
+			
+			Tollszín(szin2);
+
+			Ív(360, 3);
+			
+
+			Jobbra(90);
+			
+
+			Tollat(fel);
+			Előre(3);
+			Tollat(le);
+
+			Tölt(szin2);
+
+			Tollat(fel);
+			Hátra(3);
+			Tollat(le);
+
+			Balra(90);
+			/**/
+
+		
+			Tollat(fel);
+			Hátra(17);
+			Jobbra(-90);
+			Hátra(6);
+			Balra(-90);
+			/**/
+  
+
+			Balra(-90);
+			Előre(4);
+			Jobbra(-90);
+			Jobbra(90);
+			Hátra(10);
+			Tollat(le);
+
+			Tollszín(szin);
+			
+
+
 			/**/
 			Tollat(fel);
 			Előre(10);
 			Tollat(le);
 			Tölt(szin);
-			Előre(13);
+			Előre(6);
 			/**/
 
 		}
 
 
 	
+		void Közép(double meret, Color szin, Color szin2)
+        {
+            for (int i = 0; i < 7; i++)
+            {
+				Közepminta(100, Color.DarkGreen, Color.LightGreen);
+			
+
+            }
+
+
+        }
 
 
 		void FELADAT()
 		{
-            for (int i = 0; i < 7; i++)
-            {Közepminta(100, Color.DarkGreen, Color.LightGreen);
-			
+			Üres(100, Color.Brown);
+			Tollat(fel);
+			Jobbra(90);
+			Előre(2.5);
+			Balra(90);
 
-            }
-			
+			Tollat(le);
+
+			Közép(100, Color.DarkGreen, Color.LightGreen);
 
 
 
