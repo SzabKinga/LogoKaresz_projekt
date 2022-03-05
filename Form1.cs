@@ -317,19 +317,120 @@ namespace LogoKaresz
 
         }
 
+		void Levél(double meret, Color szin)
+        {
+			Tollszín(szin);
+            for (int i = 0; i < 19; i++)
+            {
+				Balra(5);
+				Előre(1);
+            }
+			Jobbra(90);
+            for (int i = 0; i < 13; i++)
+            {
+				Jobbra(8);
+				Előre(0.75);
 
-		void FELADAT()
-		{
+            }
+			Jobbra(90);
+            for (int i = 0; i < 12; i++)
+            {
+				Balra(8);
+				Előre(0.75);
+
+            }
+			for (int i = 0; i < 4; i++)
+			{
+				Jobbra(20);
+				Előre(1);
+
+			}
+			for (int i = 0; i < 3; i++)
+			{
+				Jobbra(10);
+				Előre(2.5);
+
+			}
+
 			/**/
-			Üres(110, Color.Green);
+			Jobbra(160);
+			Tollat(fel);
+			Előre(6);
+			Tollat(le);
+
+			Tölt(szin);
+			Tollat(fel);
+			Előre(-6);
+			Tollat(le);
+			/**/
+
+
+
+		}
+
+		void Fű(double meret, Color szin, Color szin2, Color szin3)
+        {
+			/**/
+			Üres(meret, szin);
 			Tollat(fel);
 			Előre(2);
-			Jobbra(1);
+			Jobbra(0.5);
 			Tollat(le);
 			
 			/**/
 
-			Közép(100, Color.DarkGreen, Color.LightGreen);
+			Közép(100, szin2, szin3);
+
+			Tollat(fel);
+			Hátra(112.5);
+			Tollat(le);
+
+
+
+
+
+        }
+
+		void FELADAT()
+		{
+			Fű(110, Color.Green, Color.DarkGreen, Color.LightGreen);
+			Jobbra(130);
+
+			Levél(100, Color.DarkGreen);
+			Balra(43.5);
+
+			Tollat(fel);
+			Előre(22);
+			Balra(16);
+			Balra(90);
+			Előre(2);
+			Jobbra(90);
+			Tollat(le);
+			Levél(100, Color.DarkGreen);
+
+			for (int i = 0; i < 2; i++)
+			{
+				Balra(11*i*2);
+            Tollat(fel);
+			Előre(22);
+			Balra(16);
+			Balra(90);
+			Előre(18);
+			Jobbra(90);
+			Tollat(le);
+			Levél(100, Color.DarkGreen);
+				Jobbra(10);
+
+            }
+			Tollat(fel);
+			Előre(22);
+			Balra(16);
+			Balra(90);
+			Előre(25);
+			Jobbra(90);
+			Hátra(5);
+			Tollat(le);
+			Levél(100, Color.DarkGreen);
 
 
 
