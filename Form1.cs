@@ -443,11 +443,11 @@ namespace LogoKaresz
 
         }
 
-		void Vege()
-        {Fű(110, Color.Green, Color.DarkGreen, Color.LightGreen);
+		void Vege(Color szin, Color szin2, Color szin3)
+        {Fű(110,szin,szin2,szin3);
 			Jobbra(130);
 
-			Levél(100, Color.DarkGreen);
+			Levél(100, szin2);
 			Balra(43.5);
 
 			Tollat(fel);
@@ -457,7 +457,7 @@ namespace LogoKaresz
 			Előre(2);
 			Jobbra(90);
 			Tollat(le);
-			Levél(100, Color.DarkGreen);
+			Levél(100, szin2);
 
 			for (int i = 0; i < 2; i++)
 			{
@@ -469,7 +469,7 @@ namespace LogoKaresz
 			Előre(18);
 			Jobbra(90);
 			Tollat(le);
-			Levél(100, Color.DarkGreen);
+			Levél(100, szin2);
 				Jobbra(10);
 
             }
@@ -481,21 +481,13 @@ namespace LogoKaresz
 			Jobbra(90);
 			Hátra(5);
 			Tollat(le);
-			Levél(100, Color.DarkGreen);
-			
+			Levél(100, szin2);
 
 
-        }
-
-		void FELADAT()
-		{
-
-			//Levél2(100, Color.Green);
-
-			Vege();
+			////
+			///
 
 			Tollat(fel);
-			Tollszín(Color.Black);
 			Balra(36);
 			Hátra(70);
 			Balra(90);
@@ -504,11 +496,11 @@ namespace LogoKaresz
 			Tollat(le);
 			Jobbra(180);
 
-			
+
 			Jobbra(-150);
 
 
-			Levél2(100, Color.DarkGreen);
+			Levél2(100, szin2);
 			Balra(-50);
 			/**/
 			Tollat(fel);
@@ -518,7 +510,7 @@ namespace LogoKaresz
 			Előre(2);
 			Jobbra(-90);
 			Tollat(le);
-			Levél2(100, Color.DarkGreen);
+			Levél2(100, szin2);
 			/**/
 
 			for (int i = 0; i < 2; i++)
@@ -531,7 +523,7 @@ namespace LogoKaresz
 				Előre(18);
 				Jobbra(-90);
 				Tollat(le);
-				Levél2(100, Color.DarkGreen);
+				Levél2(100, szin2);
 				Jobbra(-20);
 
 			}
@@ -543,8 +535,19 @@ namespace LogoKaresz
 			Jobbra(-90);
 			Hátra(5);
 			Tollat(le);
-			Levél2(100, Color.DarkGreen);
+			Levél2(100, szin2);
 			/**/
+
+
+
+		}
+
+		void FELADAT()
+		{
+
+
+
+			Vege(Color.Green, Color.DarkGreen, Color.LightGreen);
 
 
 
