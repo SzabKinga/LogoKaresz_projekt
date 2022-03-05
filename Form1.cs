@@ -7,14 +7,36 @@ namespace LogoKaresz
 {
 	public partial class Form1 : Form
 	{
-		/* Függvények */
+		
 
 
-		/* Függvények vége */
+
+		
 		void FELADAT()
 		{
-            /* Ezt indítja a START gomb! */
-            // Teleport(közép.X, közép.Y+150, észak);
+			Teleport(közép.X-100, közép.Y+50, észak);
+			
+
+			kis_háromszög(Color.Black);
+			
+			kishullám(Color.DarkOliveGreen);
+
+			nagyhullám(Color.Black);
+
+			//
+			Tollat(fel);
+			Előre(10);
+			Tollat(le);
+
+			nagy_háromszög(Color.DarkOliveGreen);
+
+
+			/*
+			Tollat(fel);
+			Előre(100);
+			Tollat(le);
+			*/
+
 		}
 	}
 }
