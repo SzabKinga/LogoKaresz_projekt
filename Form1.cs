@@ -116,37 +116,20 @@ namespace LogoKaresz
 
 		}
 
-		void Üres(int meret, Color szin)
+		void Üres(double meret, Color szin)
         {
+			/**/
 			Külső_vonal_bal(meret, szin);
 			Külső_vonal_jobb(meret, szin);
 
 			Tollat(fel);
-			Előre(25);
-			Tollat(le);
-			
-
-			Külső_vonal_bal_belül(meret*0.8, szin);
-			Külső_vonal_jobb_belül(meret*0.8, szin);
-
-
-		}
-
-
-		void FELADAT()
-		{
-			/**/
-			Külső_vonal_bal(100, Color.Green);
-			Külső_vonal_jobb(100, Color.Green);
-
-			Tollat(fel);
 			Előre(10);
 			Tollat(le);
-			
 
-			Külső_vonal_bal_belül(85, Color.Green);
-			Külső_vonal_jobb_belül(85, Color.Green);
-			/**/
+
+			Külső_vonal_bal_belül(meret*0.85, szin);
+			Külső_vonal_jobb_belül(meret*0.85, szin);
+			
 			Tollat(fel);
 			Jobbra(5);
 			Balra(90);
@@ -160,6 +143,122 @@ namespace LogoKaresz
 			Tollat(le);
 			/**/
 
+
+
+		}
+
+		void Közepminta(double meret, Color szin,Color szin2)
+        {
+			Tollszín(szin);
+
+			Jobbra(90);
+			Előre(1);
+			Balra(90);
+            for (int i = 0; i < 5; i++)
+            {
+				Jobbra(15);
+				Előre(5);
+            }
+			Balra(120);
+			for (int i = 0; i < 5; i++)
+			{
+				Balra(15);
+				Előre(5);
+			}
+			Tollat(fel);
+			Balra(60);
+			Előre(16);
+
+			Tollat(le);
+			Jobbra(90);
+			Hátra(5);
+			Előre(5);
+			Előre(1);
+			Jobbra(90);
+            for (int i = 0; i < 5; i++)
+            {
+				Balra(15);
+				Előre(5);
+			}
+			Jobbra(120);
+			for (int i = 0; i < 5; i++)
+			{
+				Jobbra(15);
+				Előre(5);
+			}
+			Tollat(fel);
+			Jobbra(60);
+			Előre(16);
+
+			
+			Balra(180);
+			
+		
+			Tollat(le);
+
+			Jobbra(90);
+			Tollat(fel);
+			Előre(12);
+			Balra(90);
+			Előre(8);
+			Jobbra(90);
+			Tollat(le);
+			
+			Tollszín(szin2);
+			
+			Ív(360, 3);
+
+			Jobbra(90);
+			
+			Tollat(fel);
+			Előre(3);
+			Tollat(le);
+			
+			Tölt(szin2);
+			
+			Tollat(fel);
+			Hátra(3);
+			Tollat(le);
+
+			Balra(90);
+			
+			Balra(90);
+			Tollat(fel);
+			Hátra(12);
+			Jobbra(90);
+			Hátra(8);
+			Balra(90);
+			
+
+			Balra(90);
+			Előre(4);
+			Jobbra(90);
+			Tollat(le);
+			
+			Tollszín(szin);
+
+
+			/**/
+			Tollat(fel);
+			Előre(10);
+			Tollat(le);
+			Tölt(szin);
+			Előre(13);
+			/**/
+
+		}
+
+
+	
+
+
+		void FELADAT()
+		{
+            for (int i = 0; i < 7; i++)
+            {Közepminta(100, Color.DarkGreen, Color.LightGreen);
+			
+
+            }
 			
 
 
