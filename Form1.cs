@@ -367,6 +367,58 @@ namespace LogoKaresz
 
 
 		}
+		void Levél2(double meret, Color szin)
+		{
+			Tollszín(szin);
+			for (int i = 0; i < 19; i++)
+			{
+				Balra(-5);
+				Előre(1);
+			}
+			Jobbra(-90);
+			for (int i = 0; i < 13; i++)
+			{
+				Jobbra(-8);
+				Előre(0.75);
+
+			}
+			Jobbra(-90);
+			for (int i = 0; i < 12; i++)
+			{
+				Balra(-8);
+				Előre(0.75);
+
+			}
+			for (int i = 0; i < 4; i++)
+			{
+				Jobbra(-20);
+				Előre(1);
+
+			}
+			for (int i = 0; i < 3; i++)
+			{
+				Jobbra(-10);
+				Előre(2.5);
+
+			}
+
+			/**/
+			Jobbra(-160);
+			Tollat(fel);
+			Előre(6);
+			Tollat(le);
+
+			Tölt(szin);
+			Tollat(fel);
+			Előre(-6);
+			Tollat(le);
+			/**/
+
+
+
+		}
+
+
 
 		void Fű(double meret, Color szin, Color szin2, Color szin3)
         {
@@ -391,9 +443,8 @@ namespace LogoKaresz
 
         }
 
-		void FELADAT()
-		{
-			Fű(110, Color.Green, Color.DarkGreen, Color.LightGreen);
+		void Vege()
+        {Fű(110, Color.Green, Color.DarkGreen, Color.LightGreen);
 			Jobbra(130);
 
 			Levél(100, Color.DarkGreen);
@@ -431,6 +482,69 @@ namespace LogoKaresz
 			Hátra(5);
 			Tollat(le);
 			Levél(100, Color.DarkGreen);
+			
+
+
+        }
+
+		void FELADAT()
+		{
+
+			//Levél2(100, Color.Green);
+
+			Vege();
+
+			Tollat(fel);
+			Tollszín(Color.Black);
+			Balra(36);
+			Hátra(70);
+			Balra(90);
+			Előre(30);
+			Balra(90);
+			Tollat(le);
+			Jobbra(180);
+
+			
+			Jobbra(-150);
+
+
+			Levél2(100, Color.DarkGreen);
+			Balra(-50);
+			/**/
+			Tollat(fel);
+			Előre(22);
+			Balra(-28);
+			Balra(-90);
+			Előre(2);
+			Jobbra(-90);
+			Tollat(le);
+			Levél2(100, Color.DarkGreen);
+			/**/
+
+			for (int i = 0; i < 2; i++)
+			{
+				Jobbra(20 * i * 2);
+				Tollat(fel);
+				Előre(28);
+				Balra(-22);
+				Balra(-90);
+				Előre(18);
+				Jobbra(-90);
+				Tollat(le);
+				Levél2(100, Color.DarkGreen);
+				Jobbra(-20);
+
+			}
+			Tollat(fel);
+			Előre(30);
+			Balra(-24);
+			Balra(-90);
+			Előre(25);
+			Jobbra(-90);
+			Hátra(5);
+			Tollat(le);
+			Levél2(100, Color.DarkGreen);
+			/**/
 
 
 
