@@ -17,9 +17,16 @@ namespace LogoKaresz
 			// Teleport(közép.X, közép.Y+150, észak);
 			//Alap(100, Color.Black);
 			//Harfa(100, Color.DarkGreen);
-			//Virágbelső(50, Color.Black);
 			using (new Frissítés(false))
-				alap_viragbelso(100, Color.DarkGreen, Color.Black);
+            {
+			Virágbelső(100, Color.Black);
+				using (new Rajzol(false))
+					Előre(10);
+			Jobbra(90);
+				Virágkülső(65, Color.Black);
+
+            }
+			//alap_viragbelso(100, Color.DarkGreen, Color.Black);
 		}
 	}
 }

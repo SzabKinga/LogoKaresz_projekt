@@ -41,6 +41,23 @@ namespace LogoKaresz
             /**/
         }
         #endregion
+        #region alap_viragbelso
+        void alap_viragbelso(double meret, Color szinviragbelso, Color szinalap)
+        {
+            //Alap(meret, szinalap);
+            for (int i = 0; i < meret * 0.06; i++)
+            {
+                for (int j = 0; j < meret; j++)
+                {
+                    using (new Rajzol(false))
+                        Előre(meret / 200);
+                    Balra(1);
+                }
+
+                Virágbelső(meret / 2, szinviragbelso);
+            }
+        }
+        #endregion
         void Alap(double meret, Color szin)
         {
             //Bezier(100, 180, 100, 90, 141, false, false);
@@ -75,10 +92,9 @@ namespace LogoKaresz
         }
         void Virágbelső(double meret, Color szín)
         {
-            Jobbra(130);
             for (int i = 0; i < 180; i++)
             {
-                Előre(meret/200);
+                Előre(1);
                 Jobbra(1);
             }
             Jobbra(90);
@@ -93,20 +109,40 @@ namespace LogoKaresz
             Balra(135);
             /**/
         }
-        void alap_viragbelso(double meret, Color szinviragbelso, Color szinalap)
+        void Virágkülső(double meret, Color szin)
         {
-            //Alap(meret, szinalap);
-            for (int i = 0; i < meret*0.06; i++)
+            Balra(90);
+            for (int j = 0; j < 9; j++)
             {
-                for (int j = 0; j < meret; j++)
+                for (int k = 0; k < 180; k++)
                 {
-                    using (new Rajzol(false))
-                        Előre(meret / 200);
-                    Balra(1);
+                    Előre(meret/1000);
+                    Jobbra(1);
                 }
-
-                Virágbelső(meret / 2, szinviragbelso);
+                Balra(90);
+                for (int i = 0; i < 20; i++)
+                {
+                    Előre(meret/200);
+                    Jobbra(1);
+                }
+                Balra(90);
             }
+            for (int k = 0; k < 180; k++)
+            {
+                Előre(meret/1000);
+                Jobbra(1);
+            }
+            Előre(meret/10);
+            Jobbra(90);
+            Előre(meret*0.03);
+            for (int i = 0; i < 180; i++)
+            {
+                Előre(meret*0.009);
+                Balra(1);
+            }
+            Előre(meret/20);
+            Jobbra(90);
+            Előre(meret/10);
         }
     }
 }
