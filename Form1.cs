@@ -536,8 +536,16 @@ namespace LogoKaresz
 			Hátra(5);
 			Tollat(le);
 			Levél2(100, szin2);
-			/**/
 
+			Tollat(fel);
+			Jobbra(19);
+			Hátra(70);
+			Jobbra(90);
+			Előre(32);
+			Tollat(le);
+			Jobbra(90);
+			/**/
+			
 
 
 		}
