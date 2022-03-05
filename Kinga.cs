@@ -92,18 +92,21 @@ namespace LogoKaresz
         }
         void Virágbelső(double meret, Color szín)
         {
+            Tollszín(szín);
+            Előre(meret * 0.1);
             for (int i = 0; i < 180; i++)
             {
-                Előre(1);
+                Előre(meret/100);
                 Jobbra(1);
             }
+            Előre(meret * 0.1);
             Jobbra(90);
-            Előre(meret * 0.58);
+            Előre(meret*1.156);
             /**/
             Jobbra(135);
             using (new Rajzol(false))
                 Előre(meret / 10);
-            Tölt(szín, false);
+            Tölt(szín);
             using (new Rajzol(false))
                 Hátra(meret / 10);
             Balra(135);
@@ -111,38 +114,58 @@ namespace LogoKaresz
         }
         void Virágkülső(double meret, Color szin)
         {
+            //Tollszín(szin);
             Balra(90);
             for (int j = 0; j < 9; j++)
             {
                 for (int k = 0; k < 180; k++)
                 {
-                    Előre(meret/1000);
+                    Előre(meret / 1000);
                     Jobbra(1);
                 }
                 Balra(90);
                 for (int i = 0; i < 20; i++)
                 {
-                    Előre(meret/200);
+                    Előre(meret / 200);
                     Jobbra(1);
                 }
                 Balra(90);
             }
             for (int k = 0; k < 180; k++)
             {
-                Előre(meret/1000);
+                Előre(meret / 1000);
                 Jobbra(1);
             }
-            Előre(meret/10);
+            Előre(meret / 10);
             Jobbra(90);
-            Előre(meret*0.03);
+            Előre(meret * 0.03);
             for (int i = 0; i < 180; i++)
             {
-                Előre(meret*0.009);
+                Előre(meret * 0.009);
                 Balra(1);
             }
-            Előre(meret/20);
+            Előre(meret / 20);
             Jobbra(90);
-            Előre(meret/10);
+            Előre(meret / 10);
+            using (new Rajzol(false))
+            {
+                Jobbra(135);
+                Előre(meret / 10);
+            }
+            Tölt(szin);
+            using (new Rajzol(false))
+            {
+                Hátra(meret / 10);
+                Balra(135);
+            }
+        }
+        void Virág(double meret, Color szinbelso, Color szinkulso)
+        {
+            Virágbelső(meret*0.8, szinbelso);
+            using (new Rajzol(false))
+                Előre(meret/4);
+            Jobbra(90);
+            Virágkülső(meret*1.2, szinkulso);
         }
     }
 }

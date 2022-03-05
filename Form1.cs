@@ -18,14 +18,8 @@ namespace LogoKaresz
 			//Alap(100, Color.Black);
 			//Harfa(100, Color.DarkGreen);
 			using (new Frissítés(false))
-            {
-			Virágbelső(100, Color.Black);
-				using (new Rajzol(false))
-					Előre(10);
-			Jobbra(90);
-				Virágkülső(65, Color.Black);
-
-            }
+				Virág(150, Color.Black, Color.DarkGreen);
+			
 			//alap_viragbelso(100, Color.DarkGreen, Color.Black);
 		}
 	}
