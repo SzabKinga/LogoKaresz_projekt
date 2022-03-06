@@ -145,33 +145,270 @@ namespace LogoKaresz
 			Előre(5);
 			Előre(10);
 			Tollat(le);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
+		void szirom(Color szin)
+        {
+			Tollat(fel);
+			Balra(90);
+			Előre(3);
+			Jobbra(90);
+			Tollat(le);
+
+			Jobbra(30);
+			Előre(3);
+			Jobbra(120);
+			Előre(3);
+			Jobbra(120);
+			Tollat(fel);
+			Előre(3);
+			Tollat(le);
+
+			Jobbra(20);
+			Előre(5);
+			Balra(30);
+			Tollat(fel);
+			Előre(9);
+			Tollat(le);
+			Jobbra(120);
+			Ív(110, 5);
+			Balra(20);
+			Jobbra(180);
+			Balra(30);
+			Tollat(fel);
+			Előre(9);
+			Tollat(le);
+			Jobbra(90);
+			Ív(70, 5);
+			Balra(110);
+
+			Előre(10);
+			Balra(50);
+			Előre(5);
+			Jobbra(140);
+			Előre(5);
+			Balra(80);
+
+			Előre(7);
+
+			Balra(50);
+			Előre(5);
+			Jobbra(140);
+			Előre(5);
+			Balra(80);
+
+			Jobbra(20);
+			Előre(5);
+
+			Balra(50);
+			Előre(5);
+			Jobbra(140);
+			Előre(5);
+			Balra(80);
+
+			Jobbra(20);
+			Előre(5);
+
+			Balra(50);
+			Előre(7);
+			Jobbra(140);
+			Előre(7);
+			Balra(90);
+			Ív(90,15);
 
 
+			Tollat(fel);
+			Balra(10);
+			Előre(10);
+		    Jobbra(7);
+
+			Tollat(le);
+			Ív(180,20);
+			Ív(150,20);
+			Tollat(fel);
+			Jobbra(10);
+			Előre(10);
+			Balra(20);
+			Tollat(le);
+			Ív(90,10);
+
+			Balra(117); 
+			Előre(3);
+			Jobbra(70);
+			Előre(5);
+			Jobbra(100);
+			Előre(5);
+			Balra(55);
+			Előre(5);
+
+			Balra(90); 
+			Előre(3);
+			Jobbra(90);
+			Előre(3);
+			Jobbra(100);
+			Előre(5);
+			Balra(70);
+
+			Előre(5);
+
+			Balra(90); 
+			Előre(5);
+			Jobbra(130);
+			Előre(7);
+			Balra(25);
+
+			Előre(5);
+
+			Balra(90); 
+			Előre(5);
+			Jobbra(130);
+			Előre(7);
+			Balra(20);
+
+			Előre(10);
+
+			Balra(80);
+			Előre(5);
+			Jobbra(140);
+			Előre(7);
+			Balra(25);
+
+			Jobbra(10);
+			Előre(7);
+
+			Tollat(fel);
+			Előre(3);
+			Tollat(le);
+
+			Jobbra(95);
+
+			Tollat(fel);
+			Előre(4);
+			Tölt(szin);
+			Előre(10);
+			Tollat(le);
+		}
+
+		void Középső_szirom(Color szin)
+        {
+			Tollszín(szin);
+			Tollvastagság(5);
+			Tollat(fel);
+			Balra(90);
+			Előre(5);
+			Jobbra(90);
+			Tollat(le);
 
 
+			Balra(50);
+			Ív(100, 20);
 
+			Tollat(fel);
+			Jobbra(40);
+			Előre(10);
+			Jobbra(35);
+			Tollat(le);
 
+			Ív(100, 20);
+			Ív(80, 10);
+			Tollvastagság(1);
+			Tollszín(Color.Black);
 
+			Jobbra(55);
+			Jobbra(90);
+			Tollat(fel);
+			Előre(5);
+			Balra(90);
+			Előre(5);
+			Tollat(le);
+		}
+
+		void kisvirág(Color szin)
+        {
+			Tollat(fel);
+			Előre(5);
+			Jobbra(90);
+			Előre(5);
+			Jobbra(90);
+			Tollat(le);
+
+			Ív(180, 5);
+			Előre(10);
+			Balra(45);
+			Előre(5);
+			Jobbra(135);
+			Előre(17);
+			Jobbra(135);
+			Előre(5);
+			Balra(45);
+			Előre(10);
+
+			Tollat(fel);
+			Jobbra(90);
+			Előre(5);
+			Balra(90);
+			Előre(5);
+			Jobbra(180);
+			Tollat(le);
+
+			Tollat(fel);
+			Előre(10);
+			Tölt(szin);
+			Előre(22);
+			Tollat(le);
+        }
+
+		void nagyvirág(Color szin)
+        {
+			Tollat(fel);
+			Előre(5);
+			Jobbra(90);
+			Előre(5);
+			Jobbra(90);
+			Tollat(le);
+
+			Ív(180, 5);
+			Balra(20);
+			Előre(10);
+			Balra(55);
+			Előre(5);
+			Jobbra(165);
+			Előre(10);
+			Balra(45);
+			Előre(5);
+			Jobbra(90);
+			Előre(5);
+			Balra(45);
+			Előre(10);
+			Jobbra(160);
+			Előre(5);
+			Balra(40);
+			Előre(10);
+
+			Balra(30);
+			Tollat(fel);
+			Jobbra(90);
+			Előre(5);
+			Balra(90);
+			Előre(5);
+			Jobbra(180);
+			Tollat(le);
+
+			Tollat(fel);
+			Előre(10);
+			Tölt(szin);
+			Tollat(le);
+		}
+
+		void helyedre()
+        {
+			Tollat(fel);
+			Jobbra(90);
+			Előre(1);
+			Balra(90);
+			Hátra(173);
+			Tollat(le);
+        }
 
 	}
 }

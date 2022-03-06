@@ -16,6 +16,7 @@ namespace LogoKaresz
 		{
 			Teleport(közép.X-100, közép.Y+50, észak);
 			
+			//Szár
 
 			kis_háromszög(Color.Black);
 			
@@ -23,20 +24,24 @@ namespace LogoKaresz
 
 			nagyhullám(Color.Black);
 
-			//
+			// Szár-1
 			Tollat(fel);
 			Előre(10);
 			Tollat(le);
+			//
 
 			nagy_háromszög(Color.DarkOliveGreen);
 
+			szirom(Color.Black);
 
-			/*
-			Tollat(fel);
-			Előre(100);
-			Tollat(le);
-			*/
+			Középső_szirom(Color.DarkOliveGreen);
 
+			kisvirág(Color.Black);
+
+			nagyvirág(Color.DarkOliveGreen);
+
+			helyedre();
+			
 		}
 	}
 }
