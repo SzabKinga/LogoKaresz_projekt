@@ -15,12 +15,15 @@ namespace LogoKaresz
 		{
 			/* Ezt indítja a START gomb! */
 			// Teleport(közép.X, közép.Y+150, észak);
-			//Alap(100, Color.Black);
-			//Harfa(100, Color.DarkGreen);
+			/** /
+			Alap(100, Color.Black);
+			Harfa(100, Color.DarkGreen);
+			alap_viragbelso(100, Color.DarkGreen, Color.Black);
+			/**/
 			using (new Frissítés(false))
-				Virág(150, Color.Black, Color.DarkGreen);
-			
-			//alap_viragbelso(100, Color.DarkGreen, Color.Black);
+			{
+				Finishedvirag(30, false);
+			}
 		}
 	}
 }

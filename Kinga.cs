@@ -106,7 +106,7 @@ namespace LogoKaresz
             Jobbra(135);
             using (new Rajzol(false))
                 Előre(meret / 10);
-            Tölt(szín);
+            Tölt(szín, false);
             using (new Rajzol(false))
                 Hátra(meret / 10);
             Balra(135);
@@ -114,7 +114,7 @@ namespace LogoKaresz
         }
         void Virágkülső(double meret, Color szin)
         {
-            //Tollszín(szin);
+            Tollszín(szin);
             Balra(90);
             for (int j = 0; j < 9; j++)
             {
@@ -150,22 +150,144 @@ namespace LogoKaresz
             using (new Rajzol(false))
             {
                 Jobbra(135);
-                Előre(meret / 10);
+                Előre(meret/40);
             }
-            Tölt(szin);
+            Tölt(szin, false);
             using (new Rajzol(false))
             {
-                Hátra(meret / 10);
+                Hátra(meret/40);
                 Balra(135);
             }
         }
         void Virág(double meret, Color szinbelso, Color szinkulso)
         {
-            Virágbelső(meret*0.8, szinbelso);
+            Virágbelső(meret*0.7, szinbelso);
             using (new Rajzol(false))
-                Előre(meret/4);
+                Előre(meret/3);
             Jobbra(90);
             Virágkülső(meret*1.2, szinkulso);
+        }
+        void Viragfeletticuccli(double meret, Color szin)
+        {
+            Balra(260);
+            for (int i = 0; i < 80; i++)
+            {
+                Előre(meret*0.005);
+                Jobbra(1);
+            }
+            Jobbra(180);
+            for (int i = 0; i < 80; i++)
+            {
+                Előre(meret*0.005);
+                Jobbra(1);
+            }
+            Balra(150);
+            for (int i = 0; i < 50; i++)
+            {
+                Előre(meret*0.005);
+                Balra(1);
+            }
+            Jobbra(60);
+            for (int i = 0; i < 50; i++)
+            {
+                Előre(meret*0.005);
+                Balra(1);
+            }
+            using(new Rajzol(false))
+            {
+                Fordulj(160);
+                Előre(meret/10);
+            }
+            Tölt(szin, false);
+            using (new Rajzol(false))
+            {
+                Hátra(meret/10);
+                Fordulj(90);
+            }
+            
+        }
+        void Finishedvirag(double meret, bool start)
+        {
+            if (start)
+            {
+                for (int i = 0; i < 2; i++)
+                {
+                    Virág(meret, Color.DarkGreen, Color.Black);
+                    using (new Rajzol(false))
+                    {
+                        Előre(meret * 0.75);
+                        Jobbra(90);
+                        Előre(meret);
+                    }
+                    Viragfeletticuccli(meret * 2, Color.Black);
+                    using (new Rajzol(false))
+                    {
+                        Hátra(meret);
+                        Balra(90);
+                        Előre(meret * 0.9167);
+                    }
+                    Jobbra(90);
+                }
+                Virág(meret, Color.DarkGreen, Color.Black);
+                using (new Rajzol(false))
+                {
+                    Előre(meret * 2);
+                    Jobbra(90);
+                }
+
+                for (int i = 0; i < 2; i++)
+                {
+                    Virág(meret, Color.DarkGreen, Color.Black);
+                    using (new Rajzol(false))
+                    {
+                        Előre(meret * 0.75);
+                        Jobbra(90);
+                        Előre(meret);
+                    }
+                    Viragfeletticuccli(meret * 2, Color.Black);
+                    using (new Rajzol(false))
+                    {
+                        Hátra(meret);
+                        Balra(90);
+                        Előre(meret * 0.9167);
+                    }
+                    Jobbra(90);
+                }
+                Virág(meret, Color.DarkGreen, Color.Black);
+            }
+            else if(!start)
+            {
+                Virág(meret, Color.DarkGreen, Color.Black);
+                using (new Rajzol(false))
+                    Előre(meret * 2);
+                Jobbra(90);
+                for (int i = 0; i < 2; i++)
+                {
+                    Virág(meret, Color.DarkGreen, Color.Black);
+                    using (new Rajzol(false))
+                    {
+                        Előre(meret * 0.75);
+                        Jobbra(90);
+                        Előre(meret);
+                    }
+                    Viragfeletticuccli(meret * 2, Color.Black);
+                    using (new Rajzol(false))
+                    {
+                        Hátra(meret);
+                        Balra(90);
+                        Előre(meret * 0.9167);
+                    }
+                    Jobbra(90);
+                }
+                Virág(meret, Color.DarkGreen, Color.Black);
+                using (new Rajzol(false))
+                {
+                    Előre(meret * 2);
+                    Jobbra(90);
+                }
+                Virág(meret, Color.DarkGreen, Color.Black);
+
+            }
         }
     }
 }
