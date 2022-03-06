@@ -41,23 +41,7 @@ namespace LogoKaresz
             /**/
         }
         #endregion
-        #region alap_viragbelso
-        void alap_viragbelso(double meret, Color szinviragbelso, Color szinalap)
-        {
-            //Alap(meret, szinalap);
-            for (int i = 0; i < meret * 0.06; i++)
-            {
-                for (int j = 0; j < meret; j++)
-                {
-                    using (new Rajzol(false))
-                        Előre(meret / 200);
-                    Balra(1);
-                }
-
-                Virágbelső(meret / 2, szinviragbelso);
-            }
-        }
-        #endregion
+        #region Alap
         void Alap(double meret, Color szin)
         {
             //Bezier(100, 180, 100, 90, 141, false, false);
@@ -289,5 +273,6 @@ namespace LogoKaresz
 
             }
         }
+        #endregion
     }
 }

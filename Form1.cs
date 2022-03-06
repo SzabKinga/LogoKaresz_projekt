@@ -24,6 +24,8 @@ namespace LogoKaresz
 			{
 				Finishedvirag(30, false);
 			}
+			Vege(Color.Green, Color.DarkGreen, Color.LightGreen);
+
 		}
 	}
 }
