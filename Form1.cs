@@ -22,9 +22,17 @@ namespace LogoKaresz
 			/**/
 			using (new Frissítés(false))
 			{
-				Finishedvirag(30, false);
-			}
+				//Finishedvirag(30, false);
 			Vege(Color.Green, Color.DarkGreen, Color.LightGreen);
+				using (new Rajzol(false))
+				{
+					Előre(60);
+					Jobbra(90);
+					Előre(15);
+					Jobbra(90);
+				}
+				Virág(45, Color.Black, Color.DarkGreen);
+			}
 
 		}
 	}
