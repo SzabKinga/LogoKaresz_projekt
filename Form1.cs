@@ -15,7 +15,7 @@ namespace LogoKaresz
 		void FELADAT()
 		{
 			Teleport(közép.X-100, közép.Y+50, észak);
-
+			
 			szár_bal_nagy(Color.Black);
 			
 			kis_háromszög(Color.Black);
@@ -23,13 +23,11 @@ namespace LogoKaresz
 			kishullám(Color.DarkOliveGreen);
 
 			nagyhullám(Color.Black);
+			
+			szár_bal_kicsi(Color.DarkOliveGreen);
 
-			// Szár-1
-			Tollat(fel);
-			Előre(10);
-			Tollat(le);
-			//
-
+			szár_jobb_kicsi(Color.DarkOliveGreen);
+			
 			nagy_háromszög(Color.DarkOliveGreen);
 
 			szirom(Color.Black);

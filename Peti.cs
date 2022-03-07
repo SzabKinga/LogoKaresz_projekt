@@ -185,154 +185,12 @@ namespace LogoKaresz
 			Tölt(szin);
 			Előre(22);
 			Tollat(le);
-
+  
 		}
 		
-		void szár_bal_kicsi(Color szin)
-        {
-			Balra(3);
-			Előre(10);
+		
 
-			Balra(90);
-			Előre(7);
-			Jobbra(120);
-			Ív(80, 7);
-			Balra(110);
-
-			Balra(3);
-			Előre(10);
-
-			Balra(90);
-			Előre(10);
-			Jobbra(120);
-			Ív(80, 10);
-			Balra(110);
-
-			Balra(5);
-			Előre(5);
-			Balra(20);
-			Előre(10);
-			Balra(45);
-			Előre(5);
-			Jobbra(90);
-			Ív(100, 8);
-
-
-			Balra(170);
-			Előre(15);
-			Balra(45);
-			Előre(12);
-			Jobbra(45);
-			Ív(100, 5);
-
-			Balra(144);
-			Előre(5);
-			Balra(45);
-			Előre(10);
-			Balra(45);
-			Előre(7);
-			Balra(45);
-			Előre(3);
-			Balra(90);
-			Előre(3);
-			Jobbra(90);
-			Előre(2);
-			Jobbra(45);
-			Előre(2);
-			Jobbra(45);
-			Előre(5);
-			Jobbra(80);
-			Előre(10);
-			Jobbra(45);
-			Előre(7);
-			Jobbra(45);
-			Előre(20);
-			Jobbra(50);
-			Előre(5);
-			Ív(105, 30);
-			Előre(50);
-
-
-
-
-		}
-
-		void szár_jobb_kicsi()
-        {
-			Előre(50);
-
-
-
-			Ív(105, 30);
-			Jobbra(50);
-			Előre(20);
-			Jobbra(45);
-			Előre(7);
-			Jobbra(45);
-			Előre(7);
-
-
-
-
-			Jobbra(45);
-			Előre(5);
-			Jobbra(45);
-			Előre(5);
-			Jobbra(90);
-			Előre(5);
-			Jobbra(90);
-			Előre(5);
-			Balra(100);
-			Előre(3);
-			Balra(45);
-			Előre(5);
-			Balra(45);
-			Előre(10);
-
-
-			Balra(90);
-			Előre(7);
-			Jobbra(70);
-			Előre(2);
-			Jobbra(50);
-			Előre(5);
-
-			Balra(90);
-			Előre(7);
-			Balra(50);
-			Előre(10);
-			Balra(130);
-			Ív(100, 7);
-			Jobbra(135);
-			Előre(3);
-			Balra(70);
-			Előre(10);
-			Balra(65);
-			Előre(15);
-
-			Balra(110);
-			Előre(10);
-			Jobbra(90);
-			Előre(7);
-			Jobbra(120);
-			Előre(5);
-			Balra(45);
-			Előre(5);
-			Balra(45);
-			Előre(5);
-
-			Balra(100);
-			Előre(7);
-			Jobbra(130);
-			Előre(7);
-			Balra(45);
-			Előre(7);
-
-
-
-
-
-		}
+		
 
 
 
@@ -446,25 +304,196 @@ namespace LogoKaresz
 			Előre(5);
 			Tollat(le);
 
+			Tollat(fel);
+			Balra(90);
+			Előre(15);
+			Jobbra(90);
+			Tollat(le);
+
+
+
+
+
+		}
+
+		void szár_bal_kicsi(Color szin)
+        {
+			Balra(45);
+			Balra(3);
+			Előre(10);
+
+			Balra(90);
+			Előre(7);
+			Jobbra(120);
+			Ív(80, 7);
+			Balra(110);
+
+			Balra(3);
+			Előre(10);
+
+			Balra(90);
+			Előre(10);
+			Jobbra(120);
+			Ív(80, 10);
+			Balra(110);
+
+			Balra(5);
+			Előre(5);
+			Balra(20);
+			Előre(10);
+			Balra(45);
+			Előre(5);
+			Jobbra(90);
+			Ív(100, 8);
+
+
+			Balra(170);
+			Előre(15);
+			Balra(45);
+			Előre(12);
+			Jobbra(45);
+			Ív(100, 5);
+
+			Balra(144);
+			Előre(5);
+			Balra(45);
+			Előre(10);
+			Balra(45);
+			Előre(7);
+			Balra(45);
+			Előre(3);
+			Balra(90);
+			Előre(3);
+			Jobbra(90);
+			Előre(2);
+			Jobbra(45);
+			Előre(2);
+			Jobbra(45);
+			Előre(5);
+			Jobbra(80);
+			Előre(10);
+			Jobbra(45);
+			Előre(7);
+			Jobbra(45);
+			Előre(20);
+			Jobbra(50);
+			Előre(5);
+			Ív(105, 30);
+			Előre(40);
+
+			Jobbra(90);
+			Előre(10);
+
+			Tollat(fel);
+			Hátra(5);
+			Jobbra(90);
+			Előre(5);
+			Tölt(szin);
+			Hátra(5);
+			Balra(90);
+			Hátra(5);
+
+			Jobbra(50);
+			Hátra(10);
+
+			Jobbra(130);
+			Előre(5);
+			Tollat(le);
 
 		}
 
 
+		void szár_jobb_kicsi(Color szin)
+		{
+			Előre(33);
+
+
+			Ív(105, 30);
+			Jobbra(50);
+			Előre(20);
+			Jobbra(45);
+			Előre(7);
+			Jobbra(45);
+			Előre(7);
 
 
 
+			Jobbra(45);
+			Előre(5);
+			Jobbra(45);
+			Előre(5);
+			Jobbra(90);
+			Előre(5);
+			Jobbra(90);
+			Előre(5);
+			Balra(100);
+			Előre(3);
+			Balra(45);
+			Előre(5);
+			Balra(45);
+			Előre(10);
 
 
+			Balra(90);
+			Előre(7);
+			Jobbra(70);
+			Előre(2);
+			Jobbra(50);
+			Előre(5);
+
+			Balra(90);
+			Előre(7);
+			Balra(50);
+			Előre(10);
+			Balra(130);
+			Ív(100, 7);
+			Jobbra(135);
+			Előre(3);
+			Balra(70);
+			Előre(10);
+			Balra(65);
+			Előre(15);
+
+			Balra(110);
+			Előre(10);
+			Jobbra(90);
+			Előre(7);
+			Jobbra(120);
+			Előre(5);
+			Balra(45);
+			Előre(5);
+			Balra(45);
+			Előre(5);
+
+			Balra(100);
+			Előre(7);
+			Jobbra(130);
+			Előre(7);
+			Balra(45);
+			Előre(7);
 
 
+			Jobbra(90);
+			Előre(12);
 
-		// Előre(10);
+			Tollat(fel);
+			Hátra(5);
+			Jobbra(90);
+			Előre(10);
+			Tölt(szin);
+			Hátra(12);
+			Balra(90);
 
 
+			Balra(45);
+			Előre(10);
+			Jobbra(90);
 
 
+			Előre(10);
+			Tollat(le);
 
-
+		}
 
 
 		void nagy_háromszög(Color szin)
