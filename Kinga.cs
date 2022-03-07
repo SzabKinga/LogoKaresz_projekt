@@ -958,7 +958,7 @@ namespace LogoKaresz
 			Hátra(4);
 			Jobbra(90);
 			Előre(4);
-			//Tölt(szin, false);
+			Tölt(szin, false);
 			Előre(22);
 			Tollat(le);
 
@@ -976,7 +976,7 @@ namespace LogoKaresz
 
 			Tollat(fel);
 			Előre(10);
-			//Tölt(szin, false);
+			Tölt(szin, false);
 			Hátra(10);
 			Tollat(le);
 
@@ -1008,7 +1008,7 @@ namespace LogoKaresz
 			Előre(7);
 			Balra(90);
 			Előre(5);
-			//Tölt(szin, false);
+			Tölt(szin, false);
 			Hátra(5);
 			Tollat(le);
 
@@ -1062,7 +1062,7 @@ namespace LogoKaresz
 
 			Tollat(fel);
 			Előre(20);
-			//Tölt(szin, false);
+			Tölt(szin, false);
 			Előre(8);
 			Előre(5);
 			Tollat(le);
@@ -1146,7 +1146,7 @@ namespace LogoKaresz
 			Hátra(5);
 			Jobbra(90);
 			Előre(5);
-			//Tölt(szin, false);
+			Tölt(szin, false);
 			Hátra(5);
 			Balra(90);
 			Hátra(5);
@@ -1231,7 +1231,7 @@ namespace LogoKaresz
 			Hátra(5);
 			Jobbra(90);
 			Előre(10);
-			//Tölt(szin, false);
+			Tölt(szin, false);
 			Hátra(12);
 			Balra(90);
 
@@ -1255,7 +1255,7 @@ namespace LogoKaresz
 
 			Tollat(fel);
 			Előre(10);
-			//Tölt(szin, false);
+			Tölt(szin, false);
 			Előre(5);
 			Előre(10);
 			Tollat(le);
@@ -1398,14 +1398,16 @@ namespace LogoKaresz
 
 			Tollat(fel);
 			Előre(4);
+			Tollat(le);
 			//Tölt(szin, false);
+			Tollat(fel);
 			Előre(10);
 			Tollat(le);
 		}
 
 		void Középső_szirom(Color szin)
 		{
-			//Tollszín(szin);
+			Tollszín(szin);
 			Tollvastagság(5);
 			Tollat(fel);
 			Balra(90);
@@ -1425,7 +1427,7 @@ namespace LogoKaresz
 			Ív(100, 20);
 			Ív(80, 10);
 			Tollvastagság(1);
-			//Tollszín(Color.Black);
+			Tollszín(Color.Black);
 
 			Jobbra(55);
 			Jobbra(90);
@@ -1466,7 +1468,7 @@ namespace LogoKaresz
 
 			Tollat(fel);
 			Előre(10);
-			//Tölt(szin, false);
+			Tölt(szin, false);
 			Előre(22);
 			Tollat(le);
 		}
@@ -1510,7 +1512,7 @@ namespace LogoKaresz
 			Tollat(fel);
 			Előre(10);
 			Tollat(le);
-			//Tölt(szin, false);
+			Tölt(szin, false);
 		}
 
 		void helyedre()
@@ -1522,6 +1524,7 @@ namespace LogoKaresz
 			Hátra(204);
 			Tollat(le);
 		}
+
 		void Egész()
         {
 			szár_bal_nagy(Color.Black);

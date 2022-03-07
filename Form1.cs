@@ -20,9 +20,10 @@ namespace LogoKaresz
 			Harfa(100, Color.DarkGreen);
 			/**/
 			using (new Frissítés(false))
-				Finishedvirag(45, true);
 			{
+				Finishedvirag(45, true);
 				/** /
+				szirom(Color.Black);
 				using(new Rajzol(false))
                 {
 					Előre(100);
