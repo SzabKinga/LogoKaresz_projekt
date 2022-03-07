@@ -820,7 +820,10 @@ namespace LogoKaresz
 
 		}
 
-		
+
+		#endregion
+		#region Peti része
+
 		#endregion
 	}
 }
