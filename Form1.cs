@@ -18,12 +18,12 @@ namespace LogoKaresz
 			/** /
 			Alap(100, Color.Black);
 			Harfa(100, Color.DarkGreen);
-			alap_viragbelso(100, Color.DarkGreen, Color.Black);
 			/**/
 			using (new Frissítés(false))
 			{
-				//Finishedvirag(30, false);
-			Vege(Color.Green, Color.DarkGreen, Color.LightGreen);
+				/** /
+				Finishedvirag(45, false);
+				Vege(Color.Green, Color.DarkGreen, Color.LightGreen);
 				using (new Rajzol(false))
 				{
 					Előre(60);
@@ -32,8 +32,19 @@ namespace LogoKaresz
 					Jobbra(90);
 				}
 				Virág(45, Color.Black, Color.DarkGreen);
+				using(new Rajzol(false))
+                {
+					Előre(100);
+					Jobbra(90);
+                }
+				Balra(90);
+				Előre(50);
+				/**/
+				Virág(45, Color.Black, Color.DarkGreen);
+				Előre(150);
+				Jobbra(90);
+			Egész();
 			}
-
 		}
 	}
 }

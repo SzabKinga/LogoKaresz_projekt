@@ -11,36 +11,6 @@ namespace LogoKaresz
 {
     public partial class Form1
     {
-        #region Harfa
-        void Harfa(double meret, Color szin)
-        {
-            Tollszín(szin);
-            Jobbra(90);
-            Bezier(meret * 0.35, 90, meret * 0.65, 80, meret * 1.5, false, false);
-            Balra(90);
-            Bezier(meret * 0.65, 90, meret * 0.35, 280, meret * 1.5, false, false);
-            Jobbra(90);
-            using (new Rajzol(false))
-                Előre(meret*0.535);
-            Jobbra(90);
-            Jobbra(90);
-            Bezier(meret * 0.3, 90, meret * 0.8, 80, meret * 1.58, false, false);
-            Balra(90);
-            Bezier(meret * 0.8, 90, meret * 0.3, 280, meret * 1.58, false, false);
-            Fordulj(-50);
-            using (new Rajzol(false))
-            {
-                Előre(meret / 10);
-            }
-            Tölt(szin);
-            using (new Rajzol(false))
-                Hátra(meret / 10);
-            Fordulj(50);
-            Tollszín(Color.Black);
-            /** /  
-            /**/
-        }
-        #endregion
         #region Alap
         void Alap(double meret, Color szin)
         {
@@ -242,8 +212,13 @@ namespace LogoKaresz
             else if(!start)
             {
                 Virág(meret, Color.DarkGreen, Color.Black);
-                using (new Rajzol(false))
-                    Előre(meret * 2);
+				using (new Rajzol(false))
+				{ Előre(meret); }
+				Jobbra(90);
+				Egész();
+				Balra(90);
+				using (new Rajzol(false))
+					Előre(meret * 2);
                 Jobbra(90);
                 for (int i = 0; i < 2; i++)
                 {
@@ -264,12 +239,15 @@ namespace LogoKaresz
                     Jobbra(90);
                 }
                 Virág(meret, Color.DarkGreen, Color.Black);
-                using (new Rajzol(false))
-                {
-                    Előre(meret * 2);
-                    Jobbra(90);
-                }
-                Virág(meret, Color.DarkGreen, Color.Black);
+				using (new Rajzol(false))
+				{ Előre(meret); }
+				Jobbra(90);
+				Egész();
+				Balra(90);
+				using (new Rajzol(false))
+					Előre(meret * 2);
+				Jobbra(90);
+				Virág(meret, Color.DarkGreen, Color.Black);
 
             }
         }
@@ -837,9 +815,6 @@ namespace LogoKaresz
 			Ív(80, 5);
 			Balra(110);
 
-
-
-
 			Balra(3);
 			Előre(10);
 
@@ -866,7 +841,6 @@ namespace LogoKaresz
 			Előre(5);
 			Jobbra(90);
 			Ív(100, 8);
-
 
 			Balra(170);
 			Előre(15);
@@ -903,17 +877,7 @@ namespace LogoKaresz
 			Előre(50);
 			Balra(140);
 
-
-
-
-
-
-
-
-
 			Előre(50);
-
-
 
 			Ív(105, 30);
 			Jobbra(50);
@@ -922,9 +886,6 @@ namespace LogoKaresz
 			Előre(7);
 			Jobbra(45);
 			Előre(7);
-
-
-
 
 			Jobbra(45);
 			Előre(5);
@@ -1000,12 +961,6 @@ namespace LogoKaresz
 
 		}
 
-
-
-
-
-
-
 		void kis_háromszög(Color szin)
 		{
 			Balra(10);
@@ -1021,9 +976,6 @@ namespace LogoKaresz
 			Tölt(szin);
 			Hátra(10);
 			Tollat(le);
-
-
-
 
 			Tollat(fel);
 			Előre(25);
@@ -1057,9 +1009,6 @@ namespace LogoKaresz
 			Hátra(5);
 			Tollat(le);
 
-
-
-
 			Tollat(fel);
 			Előre(15);
 			Balra(90);
@@ -1079,7 +1028,6 @@ namespace LogoKaresz
 
 			Balra(100);
 			Előre(15);
-
 
 			Tollat(fel);
 			Hátra(15);
@@ -1122,10 +1070,6 @@ namespace LogoKaresz
 			Jobbra(90);
 			Tollat(le);
 
-
-
-
-
 		}
 
 		void szár_bal_kicsi(Color szin)
@@ -1157,7 +1101,6 @@ namespace LogoKaresz
 			Előre(5);
 			Jobbra(90);
 			Ív(100, 8);
-
 
 			Balra(170);
 			Előre(15);
@@ -1211,14 +1154,11 @@ namespace LogoKaresz
 			Jobbra(130);
 			Előre(5);
 			Tollat(le);
-
 		}
-
 
 		void szár_jobb_kicsi(Color szin)
 		{
 			Előre(33);
-
 
 			Ív(105, 30);
 			Jobbra(50);
@@ -1227,8 +1167,6 @@ namespace LogoKaresz
 			Előre(7);
 			Jobbra(45);
 			Előre(7);
-
-
 
 			Jobbra(45);
 			Előre(5);
@@ -1244,7 +1182,6 @@ namespace LogoKaresz
 			Előre(5);
 			Balra(45);
 			Előre(10);
-
 
 			Balra(90);
 			Előre(7);
@@ -1284,7 +1221,6 @@ namespace LogoKaresz
 			Balra(45);
 			Előre(7);
 
-
 			Jobbra(90);
 			Előre(12);
 
@@ -1296,17 +1232,13 @@ namespace LogoKaresz
 			Hátra(12);
 			Balra(90);
 
-
 			Balra(45);
 			Előre(10);
 			Jobbra(90);
 
-
 			Előre(10);
 			Tollat(le);
-
 		}
-
 
 		void nagy_háromszög(Color szin)
 		{
@@ -1317,7 +1249,6 @@ namespace LogoKaresz
 			Jobbra(115);
 			Előre(15);
 			Jobbra(165);
-
 
 			Tollat(fel);
 			Előre(10);
@@ -1479,7 +1410,6 @@ namespace LogoKaresz
 			Jobbra(90);
 			Tollat(le);
 
-
 			Balra(50);
 			Ív(100, 20);
 
@@ -1584,10 +1514,36 @@ namespace LogoKaresz
 		{
 			Tollat(fel);
 			Jobbra(90);
-			Előre(1);
+			Hátra(1);
 			Balra(90);
-			Hátra(199);
+			Hátra(204);
 			Tollat(le);
+		}
+		void Egész()
+        {
+			szár_bal_nagy(Color.Black);
+
+			kis_háromszög(Color.Black);
+
+			kishullám(Color.DarkGreen);
+
+			nagyhullám(Color.Black);
+
+			szár_bal_kicsi(Color.DarkGreen);
+
+			szár_jobb_kicsi(Color.DarkGreen);
+
+			nagy_háromszög(Color.DarkGreen);
+
+			szirom(Color.Black);
+
+			Középső_szirom(Color.DarkGreen);
+
+			kisvirág(Color.Black);
+
+			nagyvirág(Color.DarkGreen);
+
+			helyedre();
 		}
 		#endregion
 	}
