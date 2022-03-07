@@ -11,7 +11,7 @@ namespace LogoKaresz
 {
     public partial class Form1
     {
-        #region Alap
+        #region Kinga része
         void Alap(double meret, Color szin)
         {
             //Bezier(100, 180, 100, 90, 141, false, false);
@@ -251,10 +251,10 @@ namespace LogoKaresz
 
             }
         }
-		#endregion
-		#region Emese része
+        #endregion
+        #region Emese része
 
-		void Külső_vonal_bal(double meret, Color szin)
+        void Külső_vonal_bal(double meret, Color szin)
 		{
 			Tollszín(szin);
 
@@ -955,7 +955,7 @@ namespace LogoKaresz
 			Hátra(4);
 			Jobbra(90);
 			Előre(4);
-			Tölt(szin);
+			Tölt(szin, false);
 			Előre(22);
 			Tollat(le);
 
@@ -973,7 +973,7 @@ namespace LogoKaresz
 
 			Tollat(fel);
 			Előre(10);
-			Tölt(szin);
+			Tölt(szin, false);
 			Hátra(10);
 			Tollat(le);
 
@@ -1005,7 +1005,7 @@ namespace LogoKaresz
 			Előre(7);
 			Balra(90);
 			Előre(5);
-			Tölt(szin);
+			Tölt(szin, false);
 			Hátra(5);
 			Tollat(le);
 
@@ -1059,7 +1059,7 @@ namespace LogoKaresz
 
 			Tollat(fel);
 			Előre(20);
-			Tölt(szin);
+			Tölt(szin, false);
 			Előre(8);
 			Előre(5);
 			Tollat(le);
@@ -1143,7 +1143,7 @@ namespace LogoKaresz
 			Hátra(5);
 			Jobbra(90);
 			Előre(5);
-			Tölt(szin);
+			Tölt(szin, false);
 			Hátra(5);
 			Balra(90);
 			Hátra(5);
@@ -1228,7 +1228,7 @@ namespace LogoKaresz
 			Hátra(5);
 			Jobbra(90);
 			Előre(10);
-			Tölt(szin);
+			Tölt(szin, false);
 			Hátra(12);
 			Balra(90);
 
@@ -1252,7 +1252,7 @@ namespace LogoKaresz
 
 			Tollat(fel);
 			Előre(10);
-			Tölt(szin);
+			Tölt(szin, false);
 			Előre(5);
 			Előre(10);
 			Tollat(le);
@@ -1395,7 +1395,7 @@ namespace LogoKaresz
 
 			Tollat(fel);
 			Előre(4);
-			Tölt(szin);
+			Tölt(szin, false);
 			Előre(10);
 			Tollat(le);
 		}
@@ -1463,7 +1463,7 @@ namespace LogoKaresz
 
 			Tollat(fel);
 			Előre(10);
-			Tölt(szin);
+			Tölt(szin, false);
 			Előre(22);
 			Tollat(le);
 		}
@@ -1506,8 +1506,8 @@ namespace LogoKaresz
 
 			Tollat(fel);
 			Előre(10);
-			Tölt(szin);
 			Tollat(le);
+			Tölt(szin, false);
 		}
 
 		void helyedre()

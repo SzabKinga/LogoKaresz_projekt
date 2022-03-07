@@ -21,8 +21,8 @@ namespace LogoKaresz
 			/**/
 			using (new Frissítés(false))
 			{
-				/** /
 				Finishedvirag(45, false);
+				/** /
 				Vege(Color.Green, Color.DarkGreen, Color.LightGreen);
 				using (new Rajzol(false))
 				{
@@ -39,11 +39,11 @@ namespace LogoKaresz
                 }
 				Balra(90);
 				Előre(50);
-				/**/
 				Virág(45, Color.Black, Color.DarkGreen);
 				Előre(150);
 				Jobbra(90);
 			Egész();
+				/**/
 			}
 		}
 	}
