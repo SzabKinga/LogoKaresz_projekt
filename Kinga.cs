@@ -183,13 +183,16 @@ namespace LogoKaresz
                     Jobbra(90);
                 }
                 Virág(meret, Color.DarkGreen, Color.Black);
-                using (new Rajzol(false))
-                {
-                    Előre(meret * 2);
-                    Jobbra(90);
-                }
+				using (new Rajzol(false))
+				{ Előre(meret); }
+				Jobbra(90);
+				Egész();
+				Balra(90);
+				using (new Rajzol(false))
+					Előre(meret * 2);
+				Jobbra(90);
 
-                for (int i = 0; i < 2; i++)
+				for (int i = 0; i < 2; i++)
                 {
                     Virág(meret, Color.DarkGreen, Color.Black);
                     using (new Rajzol(false))
@@ -955,7 +958,7 @@ namespace LogoKaresz
 			Hátra(4);
 			Jobbra(90);
 			Előre(4);
-			Tölt(szin, false);
+			//Tölt(szin, false);
 			Előre(22);
 			Tollat(le);
 
@@ -973,7 +976,7 @@ namespace LogoKaresz
 
 			Tollat(fel);
 			Előre(10);
-			Tölt(szin, false);
+			//Tölt(szin, false);
 			Hátra(10);
 			Tollat(le);
 
@@ -1005,7 +1008,7 @@ namespace LogoKaresz
 			Előre(7);
 			Balra(90);
 			Előre(5);
-			Tölt(szin, false);
+			//Tölt(szin, false);
 			Hátra(5);
 			Tollat(le);
 
@@ -1059,7 +1062,7 @@ namespace LogoKaresz
 
 			Tollat(fel);
 			Előre(20);
-			Tölt(szin, false);
+			//Tölt(szin, false);
 			Előre(8);
 			Előre(5);
 			Tollat(le);
@@ -1143,7 +1146,7 @@ namespace LogoKaresz
 			Hátra(5);
 			Jobbra(90);
 			Előre(5);
-			Tölt(szin, false);
+			//Tölt(szin, false);
 			Hátra(5);
 			Balra(90);
 			Hátra(5);
@@ -1228,7 +1231,7 @@ namespace LogoKaresz
 			Hátra(5);
 			Jobbra(90);
 			Előre(10);
-			Tölt(szin, false);
+			//Tölt(szin, false);
 			Hátra(12);
 			Balra(90);
 
@@ -1252,7 +1255,7 @@ namespace LogoKaresz
 
 			Tollat(fel);
 			Előre(10);
-			Tölt(szin, false);
+			//Tölt(szin, false);
 			Előre(5);
 			Előre(10);
 			Tollat(le);
@@ -1395,14 +1398,14 @@ namespace LogoKaresz
 
 			Tollat(fel);
 			Előre(4);
-			Tölt(szin, false);
+			//Tölt(szin, false);
 			Előre(10);
 			Tollat(le);
 		}
 
 		void Középső_szirom(Color szin)
 		{
-			Tollszín(szin);
+			//Tollszín(szin);
 			Tollvastagság(5);
 			Tollat(fel);
 			Balra(90);
@@ -1422,7 +1425,7 @@ namespace LogoKaresz
 			Ív(100, 20);
 			Ív(80, 10);
 			Tollvastagság(1);
-			Tollszín(Color.Black);
+			//Tollszín(Color.Black);
 
 			Jobbra(55);
 			Jobbra(90);
@@ -1463,7 +1466,7 @@ namespace LogoKaresz
 
 			Tollat(fel);
 			Előre(10);
-			Tölt(szin, false);
+			//Tölt(szin, false);
 			Előre(22);
 			Tollat(le);
 		}
@@ -1507,7 +1510,7 @@ namespace LogoKaresz
 			Tollat(fel);
 			Előre(10);
 			Tollat(le);
-			Tölt(szin, false);
+			//Tölt(szin, false);
 		}
 
 		void helyedre()
